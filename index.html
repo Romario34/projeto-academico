@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <div class="icone">🔐</div>
+
+        <h1>Gerador de Senhas</h1>
+        <p class="descricao">
+            Crie senhas fortes e proteja suas contas.
+        </p>
+
+        <div class="campo-senha">
+            <input type="text" id="senha"
+                   placeholder="Sua senha aparecerá aqui"
+                   readonly>
+            <button id="copiar" type="button">Copiar</button>
+        </div>
+
+        <p id="mensagem" aria-live="polite"></p>
+
+        <div class="configuracoes">
+            <label for="tamanho">
+                Tamanho da senha:
+                <span id="valorTamanho">16</span>
+            </label>
+
+            <input type="range" id="tamanho"
+                   min="8" max="32" value="16">
+
+            <label>
+                <input type="checkbox" id="maiusculas" checked>
+                Letras maiúsculas (A-Z)
+            </label>
+
+            <label>
+                <input type="checkbox" id="minusculas" checked>
+                Letras minúsculas (a-z)
+            </label>
+
+            <label>
+                <input type="checkbox" id="numeros" checked>
+                Números (0-9)
+            </label>
+
+            <label>
+                <input type="checkbox" id="simbolos" checked>
+                Símbolos (!@#$%)
+            </label>
+        </div>
+
+        <button id="gerar" class="botao-gerar" type="button">
+            Gerar nova senha
+        </button>
+
+        <p class="rodape">Segurança começa com uma boa senha.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

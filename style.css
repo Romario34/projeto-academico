@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #10131a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 430px;
+    padding: 30px;
+    background: #1b202b;
+    border: 1px solid #303746;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px #00000040;
+}
+
+.icone {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    text-align: center;
+    color: #aab2c0;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.campo-senha {
+    display: flex;
+    gap: 8px;
+}
+
+.campo-senha input {
+    min-width: 0;
+    flex: 1;
+    padding: 12px;
+    background: #10131a;
+    border: 1px solid #394252;
+    border-radius: 8px;
+    color: #70edaa;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#copiar {
+    background: #303a49;
+    color: white;
+}
+
+#mensagem {
+    min-height: 20px;
+    margin-top: 8px;
+    color: #70edaa;
+    font-size: 13px;
+}
+
+.configuracoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 18px 0 25px;
+    color: #e2e7ef;
+    font-size: 14px;
+}
+
+.configuracoes label:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+#valorTamanho {
+    color: #70edaa;
+    font-weight: bold;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #35d987;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    accent-color: #35d987;
+    margin-right: 8px;
+}
+
+.botao-gerar {
+    width: 100%;
+    padding: 15px;
+    background: #35d987;
+    color: #10131a;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.botao-gerar:hover {
+    background: #65efa9;
+    transform: translateY(-2px);
+}
+
+.rodape {
+    text-align: center;
+    margin-top: 22px;
+    color: #8993a4;
+    font-size: 12px;
+}
